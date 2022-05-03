@@ -4,7 +4,7 @@ font-family:Arial, Helvetica, sans-serif;
 margin-left: 100px;
 margin-right: 100px;
 margin-top: 50px;
-text-transform: capitalize;
+text-align: justify;
 }
 legend{
     font-size: 30pt;
@@ -21,7 +21,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 20pt;
+    font-size: 15pt;
     
 }
 .divinput {
@@ -29,23 +29,24 @@ fieldset {
 }
 
 fieldset input {
-    height: 45px;
-    width: 450px;
+    height: 30px;
+    width: 350px;
     border: none;
     border-radius: 10px;
     padding: 5px;
     background-color: rgba(205, 205, 210, 0.45);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.447);
-    font-size: 20pt;
+    font-size: 15pt;
 }
 .cadbotao{
     border: none;
-    height: 100px;
-    width: 200px;
+    height: 50px;
+    width: 150px;
     background-color: rgb(205, 205, 210);
-    font-size: 25pt;
+    font-size: 15pt;
     border-radius: 10px;
     cursor: pointer;
+
 }
 .cadbotao:hover{
     background-color: rgb(181, 216, 216);
@@ -57,5 +58,13 @@ footer{
     text-align: center;
     text-transform: uppercase;
 }
-footer p a {
+
+.acesso a {
+    text-decoration: none;
+    font-size: 12pt;
+    padding: 15px;
+}
+
+.acesso a:hover {
+    text-decoration: underline;
 }
