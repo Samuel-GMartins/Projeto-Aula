@@ -10,6 +10,12 @@ legend{
     font-size: 30pt;
 }
 
+article {
+    background-color: rgba(157, 191, 191, 0.263);
+    padding: 20px;
+    border-radius: 15px;
+}
+
 fieldset {
     padding: 20px;
     display: flex;
@@ -35,6 +41,7 @@ fieldset input {
 .cadbotao{
     border: none;
     height: 100px;
+    width: 200px;
     background-color: rgb(205, 205, 210);
     font-size: 25pt;
     border-radius: 10px;
@@ -42,4 +49,13 @@ fieldset input {
 }
 .cadbotao:hover{
     background-color: rgb(181, 216, 216);
+}
+
+
+/*          RODAPÉ          */
+footer{
+    text-align: center;
+    text-transform: uppercase;
+}
+footer p a {
 }
