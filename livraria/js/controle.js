@@ -1,5 +1,10 @@
 // Caso coloque a chamanda dentro do <head>
 // use window.onload(){ ... Seu codigo todo aqui...}
+// window.onload=function(){
+
+//     // codigo aqui
+// }
+
 
 console.log('Hello World!')
 document.querySelector("h1").innerHTML+=" >>" // Seleciona o h1 e troca o html para   "Teste"
