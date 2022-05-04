@@ -14,6 +14,11 @@ body {
 
 h1 {
     padding: 10px;
+    color: brown;
+}
+h2 {
+    padding: 10px;
+    color: rgb(0, 0, 131);
 }
 .logo{
 display: flex;
