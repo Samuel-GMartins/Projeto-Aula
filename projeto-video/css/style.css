@@ -1,15 +1,15 @@
 * {
     padding: 0;
     margin: 0;
-    font-family:Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: aliceblue;
+    background-color: black;
     margin-left: 25%;
     margin-top: 5em;
     margin-right:25%;
     text-align: justify;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -25,19 +25,25 @@ display: flex;
 }
 
 section {
-    background-color: rgba(255, 224, 224, 0.404);
-    padding: 25px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
     border-radius: 15px;
     margin-top: 20px ;
 }
 
 
-.form{
+.form {
     padding: 15px;
-    border-color: rgba(0, 0, 0, 0.074);
-    background-color: rgba(255, 0, 0, 0.104);
-    border-radius: 15px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.436);
+    border: none;
+}
+
+.comentario {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;    
 }
 
 .pesq {
@@ -68,16 +74,17 @@ section {
     background-color: rgb(255, 0, 0);
 }
 
-#comentario {
-    text-align: center;
-    padding: 20px;
+div a {
+    text-decoration: none;
 }
 footer {
+    color: #fff;
     padding: 25px;
     text-align: center;
     font-weight: bold;
 }
 footer a {
+    color: #fff;
     text-decoration: none;
     text-align: center;
 }
@@ -85,4 +92,15 @@ footer a {
 footer a:hover{
     text-decoration: underline;
     color: red;
+}
+
+.patrocinio p {
+    font-weight: bold;
+    margin: -10px;
+}
+
+.patrocinio {
+    display: flex;
+    justify-content: space-around;
+
 }
