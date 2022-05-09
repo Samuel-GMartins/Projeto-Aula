@@ -1,38 +1,40 @@
-h1 {
-    color: #999 !important;
-    font-size: 40px;
+body {
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-p {
-    color: red;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.4em;
-    text-align: justify;
+h1 {
+    color: rgb(212, 26, 26);
 }
-footer p {
-    color: brown;
+
+h2 {
+    color: rgb(165, 108, 42);
+}
+
+
+
+.pesq {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
     font-weight: bold;
-    font-size: 15px;
+
+}
+
+footer a {
+    text-decoration: none;
     text-align: center;
 }
 
-section article:nth-of-type(1) p:nth-of-type(2) { /* Dentro de section, primeiro article, segundo parágrafo*/
-    text-transform: capitalize;
-    color: #999;
-
-}
-
-section article:nth-of-type(1) ul li:first-child { /* Primeiro artigo, ultimo filho */
-    color: brown;
-    font-weight: bold;
-}
-
-section article:nth-of-type(2) table tr:nth-of-type(2) td:last-child{ /* Segundo artigo, tabela, segunda linha, ultimo filho */
-    background-color: #000;
-    color: white;
-}
-
-.estilo1{
-    background-color: #999;
-    color: #000;
+footer a:hover {
+    text-decoration: underline;
+    color: red;
 }
