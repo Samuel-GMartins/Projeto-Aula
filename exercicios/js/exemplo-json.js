@@ -1,7 +1,7 @@
 console.log("testando Js")
 
 // Escopos var let const
-let videos = '{"tipo": "Site de Assinatura", "turma":"Impulso Tec","ano":2020}'
+let videos = '{"tipo": "Site de Assinatura", "turma":"Impulso Tec","ano":2022}'
 
 console.log(videos)
 let videosJSON = JSON.parse(videos)
