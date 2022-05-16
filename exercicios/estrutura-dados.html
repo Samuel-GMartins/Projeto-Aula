@@ -31,7 +31,7 @@
             <ul id="result"></ul>
             <p>Usuários Aguardando Suporte</p>
             <ul id="users"></ul>
-            <button id="btAtende">Atendimento Concluído</button>
+            <button id="btAtende" class="btn btn-info">Atendimento Concluído</button>
         </div>
 
     </section>
@@ -99,35 +99,44 @@
     console.log("Atendidos Até o momento", usuariosAtendidos)
 
     ////////////////////////////////////////////////////////
+    //                  SISTEMA DE FILA
+    ///////////////////////////////////////////////////////
 
     // next = proximo user / users = lista de pendencias / result = lista de atendidos / btAtende = Botao de confirmação
-
     let listaUsers = ["Allan", "Debora", "Francis", "Georgia", "Osmar"]
     let listaResult = []
 
+    // Função para mostrar usuários atendidos, pendentes e próximo da lista
     function users() {
         document.querySelector("#users").innerHTML = ""
         for (var i = 0; i < listaUsers.length; i++) {
             document.querySelector("#users").innerHTML += "<li>" + listaUsers[i] + "</li>"
         }
-        document.querySelector("#next").innerHTML = listaUsers[0]
+        listaUsers.length > 0 ? document.querySelector("#next").innerHTML = listaUsers[0] : null
     }
-
     users()
+    // Fim da função
 
+    // Função que ativa o botão ao clicar
     document.querySelector("#btAtende").onclick = function () {
-        
-        listaResult.push(listaUsers[0])
-        document.querySelector("#result").innerHTML = "" // Comando Não deixa acumular os valores 
+        if (listaUsers.length > 0) {
+            listaResult.push(listaUsers[0])
+            document.querySelector("#result").innerHTML = "" // Comando Não deixa acumular os valores 
 
-        for (var i = 0; i < listaResult.length; i++) {
-            document.querySelector("#result").innerHTML += "<li>" + listaResult[i] + "</li>"
+            for (var i = 0; i < listaResult.length; i++) {
+                document.querySelector("#result").innerHTML += "<li>" + listaResult[i] + "</li>"
+            }
+            listaUsers.shift()
+            users()
+        } else {
+            document.querySelector("#next").innerHTML = "<b>Todos os clientes foram atendidos <b>"
         }
-    
-
-        listaUsers.shift()
-        users()
     }
+    // Fim da função
+
+
+
+
 </script>
 
 </html>
