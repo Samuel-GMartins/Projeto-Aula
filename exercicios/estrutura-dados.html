@@ -43,14 +43,15 @@
     </footer>
 </body>
 
-<!--/////////////////////////////////////////////////////////////////////////////////////-->
-
 <script>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     let n = 5
     let paises = ["Brasil", "França", "Alemanha", "Argentina"]
     let x = 0
 
-
+    ////////////////////////////////////////////////////////
+    //                FUNÇÃO RECURSIVA                    //
+    ////////////////////////////////////////////////////////
     function recursiva(obj) {
         if (n > 0) {
             obj.innerHTML += n + "<br>"
@@ -74,8 +75,10 @@
     recursiva_array(document.querySelector("#lerArray"))
 
 
-
     ////////////////////////////////////////////////////////
+    //            RECURSIVA CONSUMINDO ARRAY              //
+    ////////////////////////////////////////////////////////
+
     // FILAS = QUEUES (FIFO = Fist in, First Out)
     let usuariosAtendidos = []
     let fila = []
@@ -101,9 +104,9 @@
 
     console.log("Atendidos Até o momento", usuariosAtendidos)
 
+      ////////////////////////////////////////////////////////
+     //                  SISTEMA DE FILA                   //
     ////////////////////////////////////////////////////////
-    //                  SISTEMA DE FILA
-    ///////////////////////////////////////////////////////
 
     // next = proximo user / users = lista de pendencias / result = lista de atendidos / btAtende = Botao de confirmação
     let listaUsers = ["Allan", "Debora", "Francis", "Georgia", "Osmar"]
