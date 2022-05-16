@@ -32,6 +32,7 @@
             <p>Usuários Aguardando Suporte</p>
             <ul id="users"></ul>
             <button id="btAtende" class="btn btn-info">Atendimento Concluído</button>
+            <button id="darBaixa" class="btn btn-info">Dar Baixa</button>
         </div>
 
     </section>
@@ -41,6 +42,8 @@
         <p class="copy">&copy; 2022</p>
     </footer>
 </body>
+
+<!--/////////////////////////////////////////////////////////////////////////////////////-->
 
 <script>
     let n = 5
@@ -118,7 +121,11 @@
     // Fim da função
 
     // Função que ativa o botão ao clicar
-    document.querySelector("#btAtende").onclick = function () {
+    document.querySelector("#btAtende").onclick = function () {darBaixa()}
+    //Fim da função
+
+    //Função que dar baixa
+    function darBaixa(){
         if (listaUsers.length > 0) {
             listaResult.push(listaUsers[0])
             document.querySelector("#result").innerHTML = "" // Comando Não deixa acumular os valores 
@@ -135,7 +142,15 @@
     // Fim da função
 
 
+let intervaloBaixa
+// Função de itervalo de tempo para dar baixa em todos os clientes automático
+document.querySelector("#darBaixa").onclick=function(){
+intervaloBaixa = setInterval(function(){
+    darBaixa()},1000)
 
+}
+clearInterval(intervaloBaixa)
+// Para encerrar o intervalo, use clearInterval(NomeDaVariável)
 
 </script>
 
