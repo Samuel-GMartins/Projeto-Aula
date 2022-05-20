@@ -22,6 +22,9 @@
                 <label for="chamada">Abrir Chamada</label>
             </div>
             <button class="btn btn-info">Confirmar</button>
+            <div id="relatorio">
+                
+            </div>
         </form>
     </section>
 </body>
@@ -34,26 +37,34 @@
     //document.querySelector('#chamada')
 
     // Converter o localStorage em array (Desde que existam Virgulas)
-    console.log(localStorage.getItem('chamada-778')) // Texto simpleas
+    console.log(localStorage.getItem('chamada-701')) // Texto simpleas
 
-    let ch = localStorage.getItem('chamada-778')
+    let ch = localStorage.getItem('chamada-701')
     console.log(typeof (ch)) // String
 
     let chArray = ch.split(',')
     console.log(chArray)
 
     //Nome do Solicitante
-    console.log('Nome: ' + chArray[0])
+    console.log('Nome:' + chArray[0])
 
 
     //Json ++++++++++++++=
 
     let n = '{"n1":"11a","n2":"2","n3":"3"}'
     let nJSON = JSON.parse(n)
+
     console.log(nJSON)
 
-    let info = '{"nome":' + chArray[0] + '","email":"' + chArray[1] + '"}'
+    let info = '{"nome":"' + chArray[0] + '","email":"' + chArray[1] + '"}'
 
+    for (key in localStorage){
+        console.log(key)
+        console.log(localStorage.getItem(key))
+        var p=document.createElement('p')
+        p.innerHTML=localStorage.getItem(key)
+        document.querySelector('#relatorio').appendChild(p)
+    }
 
 </script>
 
