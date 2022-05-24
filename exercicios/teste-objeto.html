@@ -27,9 +27,8 @@
     </footer>
 </body>
 <script>
-
     let carro = {
-        portas:4,
+        portas: 4,
         cor: 'branco',
         modelo: 'basic',
         tetoSolar: false
@@ -38,7 +37,7 @@
 
 
     if (carro.tetoSolar == false) {
-        console.log ("O modelo " + carro.modelo + " não possui teto solar")
+        console.log("O modelo " + carro.modelo + " não possui teto solar")
     }
 
 
@@ -46,50 +45,48 @@
     console.log(carro.cor) // branco
 
     let carro2 = {
-        portas:4,
-        cores: ['branco','preto','prata'],
+        portas: 4,
+        cores: ['branco', 'preto', 'prata'],
         modelo: 'Plus',
         tetoSolar: true
     }
 
     if (carro2.tetoSolar == false) {
-        console.log ("O modelo " + carro2.modelo + " não possui teto solar")
+        console.log("O modelo " + carro2.modelo + " não possui teto solar")
     } else {
-        console.log ("O modelo " + carro2.modelo + " possui teto solar")
+        console.log("O modelo " + carro2.modelo + " possui teto solar")
     }
     console.log('O modelo ' + carro2.modelo + ', está disponivel nas cores: ' + carro2.cores)
 
     let pessoa = {
-        nome:'Roque Fernando',
-        idade:34,
+        nome: 'Roque Fernando',
+        idade: 34,
         preferMusica: 'Samba',
-        certficados:{
-            nome:'Node Js',
+        certficados: {
+            nome: 'Node Js',
             ano: 2021
         },
         // pais: 'Brasil'
-        falar: function (pais, profissao, estiloMusica){
+        falar: function (pais, profissao, estiloMusica) {
             this.preferMusica = estiloMusica
-            console.log('Olá, meu nome é: ' + this.nome + 
-            'tenho: ' + this.idade + ' anos ' +
-            'Trabalho no: ' + pais + 'como:' + profissao + 
-            "Eu gosto de ouvir: " + this.preferMusica ) // this => ele mesmo
+            console.log('Olá, meu nome é: ' + this.nome +
+                'tenho: ' + this.idade + ' anos ' +
+                'Trabalho no: ' + pais + 'como: ' + profissao +
+                ". Eu gosto de ouvir: " + this.preferMusica) // this => ele mesmo
         }
     }
 
-    let nomePessoa = pessoa['nome']  // Ou => pessoa.nome
+    let nomePessoa = pessoa['nome'] // Ou > pessoa.nome
 
-    console.log(pessoa.certficados.nome,pessoa.certficados.ano)
+    console.log(pessoa.certficados.nome, pessoa.certficados.ano)
 
     console.log(nomePessoa.length) // 14
 
-    pessoa.falar('México ', " Professor", pessoa.preferMusica) // => falar vira 'Mexico' ///// função recebe pais(mexico) e o trabalho no: recebe o pais, que é México
-    pessoa.nome= "renato "
-    pessoa.idade=45
-    pessoa.falar('Havai ', " Salva-Vidas", "sertanejo")
-
-
-
-
+    pessoa.falar('México ', " Professor", pessoa
+        .preferMusica) // => falar vira 'Mexico' ///// função recebe pais(mexico) e o trabalho no: recebe o pais, que é México
+    pessoa.nome = "renato "
+    pessoa.idade = 45
+    pessoa.falar('Havai ', " Salva-Vidas", " sertanejo")
 </script>
+
 </html>
