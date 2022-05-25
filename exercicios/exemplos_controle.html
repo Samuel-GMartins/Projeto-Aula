@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exemplos de Controle</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <section class="container mt-5">
+
+        <!--Input Type Number-->
+        <form id="form_1" class="form w-50 mx-auto">
+            <label for="qtd_telas">Coloque a Quantidade de Telas</label>
+            <input id="qtd_telas" class="form-control" type="number" min="1" max="4" name="qtd_telas">
+        </form>
+
+        <div>
+            <p>Valor Da Tela: R$ 9.90 - Porcentagem de 7%</p>
+            <p id="resultado_telas">X</p>
+        </div>
+
+        <div>
+            <button id="bt_calcular" class="btn btn-info">Calcular</button>
+        </div>
+        <!--FIM Input Type Number-->
+
+        <hr>
+    </section>
+
+    <!--Select-->
+    <section class="container mt-5">
+
+        <form id="form_2" class="form w-50 mx-auto">
+            <label for="categorias">Escolha uma Categoria</label>
+            <select name="categorias" id="categorias" class="form-control">
+                <option value="...">...</option>
+                <option value="Ficção">Ficção</option> <!--selected > A opção ja fica marcado como padrão-->
+                <option value="Suspense">Suspense</option>
+                <option value="Aventura">Aventura</option>
+            </select>
+
+            <div class="mt-5">
+                <p id="resultado_categorias">X</p>
+                <div id="box_info"></div>
+            </div>
+        </form>
+
+    </section>
+    <section class="container bt-5">
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/Nq5AzqV8iHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <footer class="text-center">
+        <hr>
+        <p class="copy">&copy; 2022</p>
+    </footer>
+
+</body>
+
+<script src="js/controle2.js"></script>
+
+</html>
