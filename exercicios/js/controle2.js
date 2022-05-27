@@ -186,3 +186,11 @@ class Fabricante extends Mercadoria {
 
 let empresa = new Fabricante('Apple', 'Iphone', 'Iphone 12 PRO', 'Vale do Silício')
 console.log(empresa.apresentacao())
+
+
+
+/////////////////////////
+
+for(key in localStorage){
+    console.log(key)
+}
