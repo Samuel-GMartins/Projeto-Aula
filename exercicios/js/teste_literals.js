@@ -66,6 +66,7 @@ function relogio() {
 }
 
 relogio()
+
 let tempo_intervalo = setInterval(
     function () {
         relogio()
